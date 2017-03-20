@@ -7,8 +7,6 @@ nginx:
     - MY_DOMAIN_NAME=cftdi.ml
     - APP_PORT_80_TCP_ADDR=web
     - APP_PORT_80_TCP_PORT=5000
-  mem_limit: 2g
-  cpu_shares: 256
   # restart: always
   ports: 
     - "80:80"
