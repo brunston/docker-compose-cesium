@@ -5,7 +5,7 @@ nginx:
     - web
   environment:
     - MY_DOMAIN_NAME=cftdi.ml
-    - APP_PORT_80_TCP_ADDR=127.0.0.1
+    - APP_PORT_80_TCP_ADDR=web
     - APP_PORT_80_TCP_PORT=5000
   mem_limit: 2g
   cpu_shares: 256
@@ -31,6 +31,9 @@ web:
   image: cesium/web
   ports:
     - "9000:5000"
+    - "5000"
+    - "80"
+    - "443"
   links:
     - db
   volumes:
