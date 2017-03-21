@@ -6,7 +6,7 @@ https-portal:
   links:
     - web
   environment:
-    = "DOMAINS=cftdi.ml -> http://127.0.0.1"
+    - "DOMAINS=cftdi.ml -> http://web"
 
 web:
   image: cesium/web
