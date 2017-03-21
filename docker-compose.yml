@@ -27,11 +27,8 @@ letsencrypt:
     - TERM=xterm
 web:
   image: cesium/web
-  ports:
-    - "9000:5000"
+  expose:
     - "5000"
-    - "80"
-    - "443"
   links:
     - db
   volumes:
