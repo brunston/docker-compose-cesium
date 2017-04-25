@@ -1,5 +1,5 @@
 FROM nginx
-MAINTAINER Opsrobot X Automation Logic "george@opsrobot.co.uk"
+MAINTAINER Brunston Poon "brunston.io@outlook.com"
 
 COPY start.sh /
 COPY nginx.conf /etc/nginx/
